@@ -2,6 +2,11 @@ body{text-align: center}
 #link li{
 display:inline-block;
 }
+div#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 table { 
 	   width:50%;
 	   text-align: center;
