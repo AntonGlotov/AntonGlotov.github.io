@@ -1,6 +1,14 @@
 body{text-align: center}
-#link li{
+#menu li{
 display:inline-block;
+text-align: center;
+}
+#menu, #menu li {
+	margin: 0;
+	padding: 0;
+}
+#menu a {
+	padding: 5px 15px;	
 }
 div#logo{
     display: block;
@@ -11,10 +19,9 @@ table {
 	   width:50%;
 	   text-align: center;
   	   border-collapse:collapse;
-           margin-bottom: 30px;
-	   color:black;
-	}
-	table, th, td{
+       color:black;
+}
+table, th, td{
    	 border: 1px solid black;
 	}
 	tr:nth-child(2n-1){
@@ -22,4 +29,17 @@ table {
 	}
 	tr:nth-child(even){
     	   background-color: #808080;
+	}
+#tabl{
+	text-align: center
+	color: red;
+}
+.footer{
+	    line-height:120px;
+	    font-size: 20 px;
+	    background: #ccc;
+	    color: black;
+	    width: 100%;
+	    height: 120px;
+	    padding-left:40px;
 	}
