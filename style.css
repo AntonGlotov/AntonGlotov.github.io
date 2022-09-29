@@ -17,14 +17,9 @@ table {
 	table, th, td{
    	 border: 1px solid black;
 	}
-	
-	th{
-    	   background-color:#301c0c;
-	   color:white;	
-	}
 	tr:nth-child(2n-1){
-    	   background-color: #f2c8aa;
+    	   background-color: #c0c0c0;
 	}
 	tr:nth-child(even){
-    	   background-color: #caa885;
+    	   background-color: #808080;
 	}
