@@ -2,7 +2,7 @@ body{text-align: center}
 #link li{
 display:inline-block;
 }
-#table { 
+table { 
 	   width:50%;
 	   text-align: center;
   	   border-collapse:collapse;
