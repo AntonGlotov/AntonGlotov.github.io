@@ -62,3 +62,15 @@ table, th, td{
 #ale {
 	color: white;
 }
+@media (min-width: 1080px)
+{
+.tabl{
+align-items: center;
+justify-content: center;
+width:auto;
+order: 1;
+}
+.form{
+order: 2;
+}
+}
