@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html>
-<!-- <link  href="style.css" rel="stylesheet" type="text/css"> -->
-    <head>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>WEB</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
-  
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <img  id="logo" style="float:left; margin:10px; width:100px; height:100px;" src="data:image/png;base64,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" alt="Описание картинки для скрин-ридеров и поисковиков" />
       
@@ -22,7 +23,7 @@
             Навигация
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Главная страница</a></li>
+            <li><a class="dropdown-item" href="antonglotov.github.io">Главная страница</a></li>
             <li><a class="dropdown-item" href="#tabl">Таблица</a></li>
             <li><a class="dropdown-item" href="#form">Форма</a></li>
           </ul>
@@ -33,75 +34,144 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
-    </div>
+      </div>
     </div>
   </div>
 </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<div class="container text-center">
+  <div class="row justify-content-center">
+    <div class="col-8">
 
-
-
-
-
-
-
-
-
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  </body>
-  <body>
-    <center>
-<ol>
-  <li><a href="http://example.com/">example.com</a></li>
-  <li><a href="https://example.com/">example.com</a></li>
-  <li><a href="ftp://example.com/file.txt">ссылку на файл на сервере FTP без авторизации</a></li>
-  <li><a href="ftp://login:password@example.com/file.txt">ссылку на файл на сервере FTP с авторизацией</a></li>
-  <li><a href="https://www.kubsu.ru/ru/fktipm"> ссылка на фрагмент страницы некоторого сайта;</a></li>
-  <li><a id="top"></a><a href="#top">cсылка на фрагмент текущей страницы</a></li>
-  <li><a href="http://example.com?page=1&perpage=15">Cсылка с двумя параметрами в URL</a></li>
-  <li>
-    <ul>
-      <li><a href="https://www.kubsu.ru/" title="Официальный сайт Кубанского государственного университета">КубГУ</a></li>
-      <li><a href="https://www.kubsu.ru/fktipm" title="Факультет компьютерных технологий КубГУ">ФКТиПМ КубГУ</a></li>
-      <li><a href="https://www.kubsu.ru/ru/node/874" title="Кафедра информационных технологий КубГУ">КИТ ФКТиПМ КубГУ</a></li>
-    </ul>
-  </li>
-  <li><a>https://example.com/</a></li>
-  <li><a href="">Cсылка с пустым href</a></li>
-  <li><a href="https://moodle.kubsu.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
-  <li><a href="https://moodle.kubsu.ru/" rel="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
-  <li>Я учусь в <a href="https://www.kubsu.ru/">КубГУ</a></li>
-  <li><a href="http://levcha.info/kovanyie-perila/perila-latun-so-steklom/"> <img src="http://levcha.info/wp-content/uploads/2022/09/IMG_9489-1024x1024.jpg" 
-    alt="Кованные Перила Кузня Левша" width="300" height="300" /></a></li>
-  <li>
-    <a id="ale">.</a>
+      <h2>Ссылки</h2>
+      <div class="list-group list-group-numbered" >
+        <a href="http://example.com/" class="list-group-item list-group-item-action">example.com</a>
+        <a href="https://example.com/" class="list-group-item list-group-item-action">example.com</a>
+        <a href="ftp://example.com/file.txt" class="list-group-item list-group-item-action">Ссылка на файл на сервере FTP без авторизации</a>
+        <a href="ftp://login:password@example.com/file.txt" class="list-group-item list-group-item-action">ссылку на файл на сервере FTP с авторизацией</a>
+        <a href="https://www.kubsu.ru/ru/fktipm" class="list-group-item list-group-item-action">ссылка на фрагмент страницы некоторого сайта</a>
+        <a id="top" href="#top" class="list-group-item list-group-item-action">cсылка на фрагмент текущей страницы</a>
+        <a href="http://example.com?page=1&perpage=15" class="list-group-item list-group-item-action">Cсылка с двумя параметрами в URL</a>
+        <a class="list-group-item list-group-item-action"> Основная навигация сайта </a>
+        <ul class="list-group list-group-horizontal list-group-item-action">
+        <li href="#" class="list-group-item list-group-item-action" >Главная страница</li>
+        <li href="#tabl" class="list-group-item list-group-item-action" >Таблица</li>
+        <li href="#form" class="list-group-item list-group-item-action" >Форма</li>
+        </ul>
+        
+        <a class="list-group-item list-group-item-action">https://example.com/</a></li>
+        <a href="" class="list-group-item list-group-item-action">Cсылка с пустым href</a>
+        <a href="https://moodle.kubsu.ru/" class="list-group-item list-group-item-action" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a>
+        <a href="https://moodle.kubsu.ru/" class="list-group-item list-group-item-action" rel="noindex">Ссылка, запрещенная для индексации поисковиками</a>
+        <a href="https://www.kubsu.ru/" class="list-group-item list-group-item-action">Я учусь в КубГУ</a>
+        <a href="http://levcha.info/kovanyie-perila/perila-latun-so-steklom/" class="list-group-item list-group-item-action"> <img src="http://levcha.info/wp-content/uploads/2022/09/IMG_9489-1024x1024.jpg" 
+            alt="Кованные Перила Кузня Левша" width="300" height="300" /></a>
+        <a class="list-group-item list-group-item-action">
         <img src = "http://levcha.info/wp-content/uploads/2022/09/IMG_9489-1024x1024.jpg" height = "100px" width = "100px" usemap = "#figuri" alt = "фигуры" >
-        <p><map name = "figuri" >
-          <area shape = "rect" coords = "100,100,0,0" href = "https://antonglotov.github.io/" alt = "квадрат" title = "square">
-        </map></p>
-          
-        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJVPw8XGxwwGJtzOOnx9XTS1OoQ75SljMdgA&usqp=CAU" height = "100px" width = "100px" usemap = "#figuri2">
-        <p><map id = "figuri2" name = "figuri2">
-          <area shape = "circle" coords = "50,50,50" href = "https://antonglotov.github.io/" alt = "круг" title = "circle">
-        </map></p>
-      </li>
-  <li><a href="html">Относительная ссылка на страницу в текущем каталоге</a></li>
-  <li><a href="about/html">Относительная ссылка на страницу в каталоге about</a></li>
-  <li><a href="../html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
-  <li><a href="../../html">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
-  <li><a href="/">Сокращенная ссылка на главную</a></li>
-  <li><a href="/html">Сокращенная ссылка на внутреннюю страницу</a></li> 
-</ol>
-<center>
-  <table class="table table-bordered border-primary table-light table-striped" style="width: 50%;">
+              <p><map name = "figuri" >
+                <area shape = "rect" coords = "100,100,0,0" href = "https://antonglotov.github.io/" alt = "квадрат" title = "square">
+              </map></p>
+                
+              <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJVPw8XGxwwGJtzOOnx9XTS1OoQ75SljMdgA&usqp=CAU" height = "100px" width = "100px" usemap = "#figuri2">
+              <p><map id = "figuri2" name = "figuri2">
+                <area shape = "circle" coords = "50,50,50" href = "https://antonglotov.github.io/" alt = "круг" title = "circle">
+              </map></p>
+        </a>
+        <a href="html" class="list-group-item list-group-item-action">Относительная ссылка на страницу в текущем каталоге</a>
+        <a href="about/html" class="list-group-item list-group-item-action">Относительная ссылка на страницу в каталоге about</a>
+        <a href="../html" class="list-group-item list-group-item-action">Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
+        <a href="../../html " class="list-group-item list-group-item-action">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a>
+        <a href="/" class="list-group-item list-group-item-action">Сокращенная ссылка на главную</a>
+        <a href="/html" class="list-group-item list-group-item-action">Сокращенная ссылка на внутреннюю страницу</a> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center" id="form">
+  <div class="row justify-content-center">
+    <div class="col-8">
+    <form action="#" class="order-2 order-lg-5">
+        <h1 class="text-center">Форма</h1>
+        <br>
+
+        <div class="mb-3">
+
+          <label for="nameinput" class="form-label">Ваше Имя</label>
+          <input type="nameinput" class="form-control" id="nameinput" placeholder="Иванов Иван Иванович">
+
+          <label for="emailinput" class="form-label">Электронная почта</label>
+          <input type="email" class="form-control" id="emailinput" placeholder="name@example.com">
+
+          <label for="date" class="form-label">Дата Рождения</label>
+          <input type="date" class="form-control">
+        </div>
+        
+        <p class="text-center">Пол</p>
+
+        <div class="container-fluid btn-group mb-4 " role="group">
+          <input type="radio" class="btn-check" name="sex" id="sex1" autocomplete="off">
+          <label class="btn btn-outline-dark" for="sex1">Мужской</label>
+
+          <input type="radio" class="btn-check" name="sex" id="sex2" autocomplete="off">
+          <label class="btn btn-outline-dark" for="sex2">Женский</label>
+        </div>
+
+        <p class="text-center">Количество конечностей</p>
+        <div class="container-fluid btn-group mb-3" role="group">
+
+          <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+          <label class="btn btn-outline-dark" for="option1">Одна</label>
+
+          <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+          <label class="btn btn-outline-dark" for="option2">Две</label>
+
+          <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+          <label class="btn btn-outline-dark" for="option3">Три</label>
+
+          <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+          <label class="btn btn-outline-dark" for="option4">Четыре</label>
+
+        </div>
+
+        <div class="text-center">
+          <label class="" for="superpowers" id="superpowers_label">Суперспособности</label><br>
+          <select class="form-select mb-3" name="superpowers[]" multiple = "multiple">
+            
+            <option value="immortality">Бессмертие</option>
+            <option value="noclip">Прохождение сквозь стены</option>
+            <option value="levitation">Левитация</option>
+          </select>
+        </div>
+
+        <div class="text-center mb-4">
+          <label class="form-label" for="biography">Биография</label><br>
+          <textarea class="form-control" id="biography" aria-label="With textarea" placeholder="Расскажите о себе"></textarea>
+        </div>
+
+        <div class="text-center mb-5">
+          <input type="checkbox" class="btn-check" id="confirm" autocomplete="off">
+          <label class="btn btn-outline-dark" for="confirm">С контрактом ознакомлен</label>
+        </div>
+        <div class="text-center mb-4">
+          <input class="btn btn-dark col-6" type="submit" value="Отправить">
+        </div>
+      </form>
+    </div>
+  </div>    
+</div>
+<div class="container text-center">
+  <div class="row justify-content-center">
+    <div class="col-8">
+<h1>Таблица</h1>
+  <table class="table table-bordered border border-dark border-3 table-light table-striped table-hover" id="tabl" >
    <tbody>
     <tr>
-      <td scope="col">Колонка 1</td>
-      <td scope="col">Колонка 2</td>
-      <td scope="col">Колонка 3</td>
+      <td>Колонка 1</td>
+      <td>Колонка 2</td>
+      <td>Колонка 3</td>
     </tr>
     <tr>
-
       <td colspan="2">Ячейка 11 и 12</td>
       <td>Ячейка 13</td>
     </tr>
@@ -125,53 +195,14 @@
 
     </tr>
   </tbody>
-</table>
-</center>
-<div class="form">
-<h2>Форма</h2>
-<a id="form"></a>
-    <form action="exemple">
-    <label>
-        Имя:<br/>
-    <input name="field-name-1" value="Введите имя">
-    </label><br/>
-    <label>
-        email:<br/>
-    <input name="field-email" type="email" placeholder="Введите email">
-    </label><br/>
-        Дата рождения:<br/>
-      <label><input name="field-date" type="date" value="2003-10-15">
-     </label><br/>
-        Пол:<br/>
-    <label><input type="radio" checked="checked" name="radio-group-1"> Женщина </label> 
-    <label><input type="radio" name="radio-group-1"> Мужчина  
-    </label><br/>
-        Количество конечностей :<br/>
-    <label><input type="radio" checked="checked" name="radio-group-1"> 2 </label> 
-    <label><input type="radio" name="radio-group-1"> 3 </label> 
-    <label><input type="radio" name="radio-group-1"> 4 </label> 
-    <label><input type="radio" name="radio-group-1"> 5 </label><br/>
-    <label>
-        Сверхспособности:<br/>
-    <select name="field-name-2" multiple="multiple">
-    <option value="Значение1">Бессмертие</option>
-    <option value="Значение2">Прохождение сквозь стены</option>
-    <option value="Значение3">Левитация</option> </select>
-    </label><br/>
-    <label>
-        Биография:<br/>
-    <textarea name="field-name-3" placeholder="Введите текст"> </textarea>
-    </label><br>
-    <label>
-        <input type="checkbox" checked="checked" name="check"> С контрактом ознакомлен(а)
-    </label><br/>
-    <input type="submit" value="Отправить">
-    </form>
-  </div>
-    <footer>
-      <div class="footer">(c) Антон Глотов 2022
-      </div>
-    </footer>
-    </center>
-</body>
+</table>  
+</div>
+</div>
+</div>
+
+<footer class ="container-fluid bg-dark text-white text-center" style="height:100px;">
+  <span class="span_style_1"><h1>(c) Антон Глотов 2022</h1></span>
+</footer>
+
+  </body>
 </html>
