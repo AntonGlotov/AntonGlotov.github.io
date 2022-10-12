@@ -1,23 +1,29 @@
 <!doctype html>
 <html lang="en">
-<center>
-	<body>
-		<p> Цена товара:<input type="text" id="n1"></p>
-		<p> Кол-во товара:<input type="text" id="n2"></p>
-		<button id="my-button">Подсчёт стоимости</button>
-		<p id="out"></p>
-		<script src="script.js"></script>
-		<script>
-		function onClick() {
-			multiply();
+<head>
+	<title>Калькулятор стоимости</title>
+	<script src="script.js"></script>
+	<style type="text/css">
+		body{
+			text-align: center;
 		}
+	</style>
 
-		window.addEventListener('DOMContentLoaded', function (event) {
-		  console.log("DOM fully loaded and parsed");
-		  let b = document.getElementById("my-button");
-		  b.addEventListener("click", onClick);
-		});
-		</script>
-	</body>
-</center>	
+</head>
+<body>
+	<p> Цена товара:<input type="text" id="n1"></p>
+	<p> Кол-во товара:<input type="text" id="n2"></p>
+	<button id="my-button">Подсчёт стоимости</button>
+	<p id="out"></p>
+	<script>
+	function onClick() {
+		multiply();
+	}
+	window.addEventListener('DOMContentLoaded', function (event) {
+	  console.log("DOM fully loaded and parsed");
+	  let b = document.getElementById("my-button");
+	  b.addEventListener("click", onClick);
+	});
+	</script>
+</body>	
 </html>
