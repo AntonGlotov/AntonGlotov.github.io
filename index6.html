@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Калькулятор стоимости</title>
+	<script src="script.js"></script>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+    .t{
+      float: left;
+      padding-right: 15px;
+    }
+	</style>
+
+</head>
+<body>
+	<p> Цена товара:<input type="text" id="n1"></p>
+	<p> Кол-во товара:<input type="text" id="n2"></p>
+	<button id="my-button">Подсчёт стоимости</button>
+	<p id="out"></p>
+	<script>
+	function onClick() {
+		multiply();
+	}
+	window.addEventListener('DOMContentLoaded', function (event) {
+	  console.log("DOM fully loaded and parsed");
+	  let b = document.getElementById("my-button");
+	  b.addEventListener("click", onClick);
+	});
+	</script>
+  <br><br><br><br><br><br>
+	<p>Введите количество товаров</p>
+	<input id="c" value="1" onchange="c()"><br>
+	<div class='t'>
+		<p>Ноутбук</p>
+		<input id='btn1' type='button' value="Выбрать" onclick="b1()">
+	</div>
+	<div class='t'>
+		<p>Клавиатура</p>
+		<input type="radio" name="2"> Чёрная<br>
+		<input type="radio" name="2"> Серебрянная<br>
+		<input id='btn2' type='button' value="Выбрать" onclick="b2()">
+	</div>
+	<div class='t'>
+		<p>Мышка</p>
+		<input type="checkbox"> В коробке<br>
+		<input type="checkbox"> С позолотой<br>
+		<input id='btn3' type='button' value="Выбрать" onclick="b3()">
+	</div>
+	<p id='itog'>0 рублей</p>
+</body>
+</html>
