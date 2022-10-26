@@ -1,8 +1,12 @@
-body{
+/*body{
 background-color: darkgrey;
+}*/
+body {
+  background: linear-gradient(to right, #c7a9c4,#fda3b4,#ffab7d,#f5cd41);
 }
+
 .photo{
-    width:105px;
+    width:115px;
     height:60px;
     background-repeat: no-repeat;
     background-size: cover;
